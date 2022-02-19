@@ -1,9 +1,5 @@
-* {
-  margin: 0;
-  padding: 0;
-}
 body {
-  min-height: 3000px;
+  min-height: 4000px;
 }
 #myBtn {
   display: none;
@@ -116,29 +112,21 @@ q {
 }
 
 /* Awal Guru */
-.foto-guru{
+.foto-guru {
   width: 300px;
 }
-.card{
+.card {
   margin: 0 auto;
 }
 /* Akhir Guru */
 
-
 /* Jumlah Siswa */
-.jumlah-siswa {
-  margin: 70px 0 90px;
-}
 
-.jumlah-siswa .container {
+.jumlah-siswa .container-siswa-slider {
   height: 268px;
-  background-color: #FAFAFA;
-  margin-bottom: 60px;
-
+  background-color: #fafafa;
   background: url(../assets/background-siswa.png);
   /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: row;
@@ -146,19 +134,17 @@ q {
   justify-content: space-around;
 }
 
-.jumlah-siswa .container .siswa-slider {
+.jumlah-siswa .container-siswa-slider .siswa-slider {
   width: 120px;
 }
 
-
-
-.container .siswa-slider .siswa {
+.container-siswa-slider .siswa-slider .siswa {
   font-size: 3.438rem;
   text-align: center;
-  color: #C0CAC9;
-
+  color: #c0cac9;
 }
 /* Akhir Siswa */
+
 @media all and (max-width: 900px) {
   .jumbotron h1 {
     font-size: 2.4rem;
