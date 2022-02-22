@@ -23,12 +23,12 @@ body {
   height: auto;
 }
 
-.navbar-brand {
+/* .navbar-brand {
   margin-left: -3rem;
 }
 .navbar-nav {
   margin-right: -40px;
-}
+} */
 .navbar-nav a {
   font-size: 20px;
   font-family: poppins;
@@ -47,12 +47,13 @@ q {
   color: black;
 }
 
-/* About */
 .col h2 {
   font-size: 3.125rem;
   font-weight: 400;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+/* About */
 .row p {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
@@ -73,11 +74,10 @@ q {
   height: 293px;
   z-index: 2;
 }
-.card {
+/* .card {
   position: relative;
-  border: none;
   height: auto;
-}
+} */
 .foto-guru {
   margin-bottom: 40px;
 }
@@ -111,7 +111,6 @@ q {
   transition: all 0.8s;
 }
 
-/* Awal Guru */
 .foto-guru {
   width: 300px;
 }
@@ -120,31 +119,53 @@ q {
 }
 /* Akhir Guru */
 
+
 /* Jumlah Siswa */
-
-.jumlah-siswa .container-siswa-slider {
-  height: 268px;
-  background-color: #fafafa;
-  background: url(../assets/background-siswa.png);
-  /* Center and scale the image nicely */
-  background-size: cover;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.jumlah-siswa .container-siswa-slider .siswa-slider {
-  width: 120px;
-}
-
-.container-siswa-slider .siswa-slider .siswa {
-  font-size: 3.438rem;
-  text-align: center;
+.siswa-slider .siswa {
+  line-height:60px;
+  font-size: 3.4rem;
+  height: auto;
+  font-family: "Times New Roman", Times, serif;
   color: #c0cac9;
+}
+.jumlah-siswa{
+  margin-bottom: 200px;
+}
+.slick-dots li button:before {
+  color: rgb(217, 0, 255);
+}
+.slick-dots li.slick-active button:before {
+  color:red !important;
 }
 /* Akhir Siswa */
 
+
+
+/* Prestasi */
+
+.carousel-caption{
+  background-color: rgba(0,0,0, 0.5);
+  /* height: 20%; */
+  display: flex;
+  align-items: center !important;
+}
+
+.carousel-item img {
+  height: auto;
+  margin: 0 auto;
+  min-height: 300px;
+  text-align: center;
+}
+
+hr{
+  margin:0 auto !important;
+  color:#F4EBEB;
+  opacity: 100% !important;
+  width: 70px;
+  height: 5px !important;
+}
+
+/* Akhir Prestasi */
 @media all and (max-width: 900px) {
   .jumbotron h1 {
     font-size: 2.4rem;
