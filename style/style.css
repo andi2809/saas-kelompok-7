@@ -1,26 +1,26 @@
 body {
-  min-height: 4000px;
+	min-height: 6000px;
 }
 #myBtn {
-  display: none;
-  position: fixed;
-  bottom: 45px;
-  right: 25px;
-  width: 50px;
-  height: 50px;
-  z-index: 99;
-  font-size: 2rem;
-  font-weight: 700;
-  border: none;
-  background-color: bisque;
-  color: rgb(197, 195, 193);
-  cursor: pointer;
-  border-radius: 50%;
+	display: none;
+	position: fixed;
+	bottom: 45px;
+	right: 25px;
+	width: 50px;
+	height: 50px;
+	z-index: 99;
+	font-size: 2rem;
+	font-weight: 700;
+	border: none;
+	background-color: bisque;
+	color: rgb(197, 195, 193);
+	cursor: pointer;
+	border-radius: 50%;
 }
 
 .logo {
-  width: 195px;
-  height: auto;
+	width: 195px;
+	height: auto;
 }
 
 /* .navbar-brand {
@@ -30,159 +30,197 @@ body {
   margin-right: -40px;
 } */
 .navbar-nav a {
-  font-size: 20px;
-  font-family: poppins;
-  color: #313030;
+	font-size: 20px;
+	font-family: poppins;
+	color: #313030;
 }
 
 .jumbotron h1 {
-  font-size: 4rem;
-  font-weight: normal;
-  font-family: "Poppins", sans-serif;
+	font-size: 4rem;
+	font-weight: normal;
+	font-family: "Poppins", sans-serif;
 }
 .br {
-  color: #273e4b;
+	color: #273e4b;
 }
 q {
-  color: black;
+	color: black;
 }
 
 .col h2 {
-  font-size: 3.125rem;
-  font-weight: 400;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 3.125rem;
+	font-weight: 400;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* About */
 .row p {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.25rem;
-  line-height: 41px;
-  letter-spacing: 0.02em;
-  transition: all 0.5s;
+	font-family: "Open Sans", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.25rem;
+	line-height: 41px;
+	letter-spacing: 0.02em;
+	transition: all 0.5s;
 }
 .row img {
-  border-radius: 45px;
-  height: auto;
-  width: 100%;
+	border-radius: 45px;
+	height: auto;
+	width: 100%;
 }
 
 /* Guru */
 .card img {
-  height: 293px;
-  z-index: 2;
+	height: 293px;
+	z-index: 2;
 }
 /* .card {
   position: relative;
   height: auto;
 } */
 .foto-guru {
-  margin-bottom: 40px;
+	margin-bottom: 40px;
 }
 .dot {
-  height: 25px;
-  width: 25px;
-  background-color: #c4c4c4;
-  opacity: 0.3;
-  border-radius: 50%;
-  position: absolute;
-  transition: all 0.8s;
-  z-index: 1;
+	height: 25px;
+	width: 25px;
+	background-color: #c4c4c4;
+	opacity: 0.3;
+	border-radius: 50%;
+	position: absolute;
+	transition: all 0.8s;
+	z-index: 1;
 }
 
 .dot1 {
-  top: 190px;
-  left: 240px;
+	top: 190px;
+	left: 240px;
 }
 
 .dot2 {
-  top: 30px;
-  left: 70px;
+	top: 30px;
+	left: 70px;
 }
 
 .card:hover > .dot {
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  border-radius: 30px;
-  transition: all 0.8s;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	border-radius: 30px;
+	transition: all 0.8s;
 }
 
 .foto-guru {
-  width: 300px;
+	width: 300px;
 }
 .card {
-  margin: 0 auto;
+	margin: 0 auto;
 }
 /* Akhir Guru */
 
-
 /* Jumlah Siswa */
 .siswa-slider .siswa {
-  line-height:60px;
-  font-size: 3.4rem;
-  height: auto;
-  font-family: "Times New Roman", Times, serif;
-  color: #c0cac9;
+	line-height: 60px;
+	font-size: 3.4rem;
+	height: auto;
+	font-family: "Times New Roman", Times, serif;
+	color: #c0cac9;
 }
-.jumlah-siswa{
-  margin-bottom: 200px;
+.jumlah-siswa {
+	margin-bottom: 200px;
 }
 .slick-dots li button:before {
-  color: rgb(217, 0, 255);
+	color: rgb(217, 0, 255);
 }
 .slick-dots li.slick-active button:before {
-  color:red !important;
+	color: red !important;
 }
 /* Akhir Siswa */
 
-
-
 /* Prestasi */
 
-.carousel-caption{
-  background-color: rgba(0,0,0, 0.5);
-  /* height: 20%; */
-  display: flex;
-  align-items: center !important;
+.carousel-caption {
+	background-color: rgba(0, 0, 0, 0.5);
+	/* height: 20%; */
+	display: flex;
+	align-items: center !important;
 }
-
 .carousel-item img {
-  height: auto;
-  margin: 0 auto;
-  min-height: 300px;
-  text-align: center;
+	width: 75%;
+	height: auto;
+	margin: 0 auto;
+	min-height: 300px;
+	text-align: center;
 }
 
-hr{
-  margin:0 auto !important;
-  color:#F4EBEB;
-  opacity: 100% !important;
-  width: 70px;
-  height: 5px !important;
+hr {
+	margin: 0 auto !important;
+	color: #f4ebeb;
+	opacity: 100% !important;
+	width: 70px;
+	height: 5px !important;
 }
 
 /* Akhir Prestasi */
-@media all and (max-width: 900px) {
-  .jumbotron h1 {
-    font-size: 2.4rem;
-  }
-  .navbar-brand {
-    margin: 0;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-  }
-  .row p {
-    font-size: 16px;
-    line-height: 30px;
-  }
-  .navbar-toggler {
-    position: absolute;
-    top: 50px;
-    right: 20px;
-  }
+
+@media all and (max-width: 992px) {
+	.jumbotron h1 {
+		font-size: 2.4rem;
+	}
+	.navbar-brand {
+		margin: 0;
+		display: flex;
+		width: 100%;
+		justify-content: center;
+	}
+	.row p {
+		font-size: 16px;
+		line-height: 30px;
+	}
+	.navbar-toggler {
+		position: absolute;
+		top: 50px;
+		right: 20px;
+	}
+
+	/* Prestasi */
+	.carousel-control-next,
+	.carousel-control-prev /*, .carousel-indicators */ {
+		filter: invert(100%);
+	}
+	.carousel-item img {
+		width: 100%;
+	}
+	.carousel-caption h5 {
+		font-size: 1rem;
+	}
+	.carousel-caption h6 {
+		font-size: 0.75rem;
+	}
+	.carousel-caption .row {
+		justify-content: space-between;
+	}
+	.carousel-caption {
+		width: 75%;
+		margin: auto !important;
+	}
+	hr {
+		width: 70px;
+	}
+}
+
+@media all and (max-width: 768px) {
+	hr {
+		width: 50px;
+	}
+}
+
+@media all and (max-width: 576px) {
+	.carousel-caption h5 {
+		font-size: 0.8rem;
+	}
+	hr {
+		width: 8vw;
+	}
 }
