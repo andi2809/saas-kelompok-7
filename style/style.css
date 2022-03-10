@@ -1,5 +1,5 @@
 body {
-	min-height: 6000px;
+	min-height: 7000px;
 }
 #myBtn {
 	display: none;
@@ -138,6 +138,20 @@ q {
 }
 /* Akhir Siswa */
 
+/* Awal Ruangan */
+
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	grid-template-rows: repeat(8, 5vw);
+	grid-gap: 1.5rem;
+}
+.gallery__item--1 {
+	grid-column: 1 / 3 !important;
+	grid-row: 1/8 !important;
+}
+/* Akhir Ruangan */
+
 /* Prestasi */
 
 .carousel-caption {
@@ -210,6 +224,28 @@ hr {
 	}
 }
 
+
+/* Footer */
+.footer {
+    position: absolute;
+    width: 100%;
+    left: 0;
+	background-color: #C4C4C4;
+	color:#455B71;
+}
+
+ul li a{
+	/* line-height: 20px; */
+	text-decoration: none;
+	font-size: 1.25rem;
+	color:#455B71 ;
+}
+ul li{
+	line-height: 40px;
+}
+
+
+/* Akhir Footer */
 @media all and (max-width: 768px) {
 	hr {
 		width: 50px;

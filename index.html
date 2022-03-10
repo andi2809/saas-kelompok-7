@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Google Font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500&display=swap" rel="stylesheet" />
+
+		<!-- Slick Slider -->
+		<!-- Add the slick-theme.css if you want default styling -->
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+		<!-- Add the slick-theme.css if you want default styling -->
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+		<!-- Style -->
+		<link rel="stylesheet" href="style/style.css" />
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+		<title>Web SIJA</title>
+	</head>
+	<body>
+		<!-- button To Top -->
+		<button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+		<!-- Akhir Button -->
+
+		<!--Background-Image -->
+		<div class="bg-image text-center shadow-1-strong rounded text-white mb-5" style="background-image: url('assets/background-header2.jpg'); min-height: 100vh; background-repeat: no-repeat; background-size: cover">
+			<!-- Navbar -->
+			<div class="container d-flex flex-column">
+				<nav class="navbar navbar-expand-md navbar-light">
+					<div class="container">
+						<a class="navbar-brand" href="#">
+							<img src="assets/header/logo-sija.png" alt="Logo Sija " class="logo" />
+						</a>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+							<div class="navbar-nav ms-auto">
+								<a class="nav-link active" aria-current="page" href="#" id="home">Home</a>
+								<a class="nav-link" href="#tentang">Tentang</a>
+								<a class="nav-link" href="#guru">Guru</a>
+								<a class="nav-link" href="#prestasi">Prestasi</a>
+								<a class="nav-link" href="#">Industri</a>
+								<a class="nav-link" href="#">Lokasi</a>
+							</div>
+						</div>
+					</div>
+				</nav>
+				<!-- Akhir Navbar -->
+			</div>
+
+			<!-- Jumbotron -->
+			<div class="jumbotron d-flex align-items-center justify-content-center flex-column" style="height: 75vh">
+				<h1 class="display-4 mb-5" style="color: #000">
+					SELAMAT DATANG DI <br />
+					<span class="br"> SITUS SIJA SMKN 26 JAKARTA</span>
+				</h1>
+				<button type="button" class="btn btn-outline-dark btn-lg mb-3">Learn More</button>
+				<q>&#8221;Karya Sepenuh Hati&#8221;</q>
+				<!-- Akhir Jumbotron -->
+			</div>
+		</div>
+
+		<!-- About -->
+		<section id="tentang">
+			<div class="container pt-3">
+				<div class="row text-center mb-4">
+					<div class="col">
+						<h2>About</h2>
+					</div>
+				</div>
+				<div class="row justify-content-around">
+					<div class="col-md-6">
+						<img src="assets/Foto-Tentang.png" alt="Gedung SIJA" />
+					</div>
+					<div class="col-md-6 align-self-center">
+						<p>
+							SIJA atau Sistem Informatika, Jaringan, dan Aplikasi adalah salah satu jurusan yang terbilang baru di SMK sejak tahun 2017. SMK dengan sistem 4 tahun ini berbeda dengan yang lain, di mana program PKL atau magang
+							ini berada pada tingkat ke-4 atau di kelas 13 dengan durasi PKL selama 10 sampai 12 bulan.
+						</p>
+					</div>
+				</div>
+				<div class="row mt-5 justify-content-around flex-row-reverse">
+					<div class="col-md-6">
+						<img src="assets/Foto-SMK.png" alt="Foto SMKN 26" />
+					</div>
+					<div class="col-md-6 align-self-center">
+						<p>SMK Negeri 26 Jakarta merupakan lembaga pendidikan kejuruan yang bertugas meningkatkan Sumber Daya Manusia (SDM) yang sesuai dengan kebutuhan Industri dan Masyarakat.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Guru -->
+		<section id="guru">
+			<div class="container text-center pt-3 mt-5">
+				<div class="row pb-3">
+					<div class="col">
+						<h2>Guru</h2>
+					</div>
+				</div>
+				<div class="row justify-content-around guru-container">
+					<div class="col-md-4 foto-guru">
+						<div class="card border-0 guru-slider" style="width: 18rem">
+							<img src="assets/guru/kuri.png" class="card-img-top" alt="Foto Bu Kuri" />
+							<div class="dot1 dot"></div>
+							<div class="dot2 dot"></div>
+							<div class="card-body">
+								<p class="card-text">Kuri Asih <br /><span>Kepala Bengkel</span></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 foto-guru">
+						<div class="card border-0 guru-slider" style="width: 18rem">
+							<img src="assets/guru/Samsul.png" class="card-img-top" alt="Foto Pa Samsul" />
+							<div class="dot1 dot"></div>
+							<div class="dot2 dot"></div>
+							<div class="card-body">
+								<p class="card-text">Samsul Bahri<br /><span>Guru</span></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 foto-guru">
+						<div class="card border-0 guru-slider" style="width: 18rem">
+							<img src="assets/guru/Danial.png" class="card-img-top" alt="Foto Pa Danial" />
+							<div class="dot1 dot"></div>
+							<div class="dot2 dot"></div>
+							<div class="card-body">
+								<p class="card-text">Danial Ahadian <br /><span>Guru</span></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 foto-guru">
+						<div class="card border-0 guru-slider" style="width: 18rem">
+							<img src="assets/guru/Sevia.png" class="card-img-top" alt="Foto Bu Sevia" />
+							<div class="dot1 dot"></div>
+							<div class="dot2 dot"></div>
+							<div class="card-body">
+								<p class="card-text">Sevia <br /><span>Guru</span></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 foto-guru">
+						<div class="card border-0 guru-slider" style="width: 18rem">
+							<img src="assets/guru/Eva.png" class="card-img-top" alt="Foto Bu Eva" />
+							<div class="dot1 dot"></div>
+							<div class="dot2 dot"></div>
+							<div class="card-body">
+								<p class="card-text">Eva<br /><span>Si Paling PNS</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Akhir Guru -->
+
+		<!-- Jumlah Siswa -->
+		<div class="container text-center mb-4">
+			<div class="row">
+				<div class="col">
+					<h2>Jumlah Siswa</h2>
+				</div>
+			</div>
+		</div>
+		<div class="bg-image text-center shadow-1-strong rounded text-white jumlah-siswa" style="background-image: url('assets/background-siswa.png'); background-repeat: no-repeat; background-color: #fafafa; background-size: cover">
+			<section id="siswa">
+				<div class="container text-center max-vw-100 pb-3 pt-5">
+					<div class="row justify-content-between container-siswa-slider align-items-center">
+						<div class="col-md-3 siswa-slider">
+							<p class="siswa">70 <br />X</p>
+						</div>
+						<div class="col-md-3 siswa-slider">
+							<p class="siswa">69 <br />XI</p>
+						</div>
+						<div class="col-md-3 siswa-slider">
+							<p class="siswa">72 <br />XII</p>
+						</div>
+						<div class="col-md-3 siswa-slider">
+							<p class="siswa">70 <br />XIII</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<!-- Akhir Jumlah Siswa -->
+
+		<!-- Awal Ruangan -->
+		<div class="container mb-5 text-center">
+			<h2>Ruangan</h2>
+			<div class="gallery">
+				<figure class="gallery__item gallery__item--1">
+					<img src="assets/ruangan/1.jpg" alt="Gallery image 1" class="gallery__img" />
+				</figure>
+				<figure class="gallery__item gallery__item--2">
+					<img src="assets/ruangan/2.jpg" alt="Gallery image 2" class="gallery__img" />
+				</figure>
+				<figure class="gallery__item gallery__item--3">
+					<img src="assets/ruangan/3.jpg" alt="Gallery image 3" class="gallery__img" />
+				</figure>
+				<figure class="gallery__item gallery__item--4">
+					<img src="assets/ruangan/4.jpg" alt="Gallery image 4" class="gallery__img" />
+				</figure>
+				<figure class="gallery__item gallery__item--5">
+					<img src="assets/ruangan/5.jpg" alt="Gallery image 5" class="gallery__img" />
+				</figure>
+				<figure class="gallery__item gallery__item--6">
+					<img src="assets/ruangan/6.jpg" alt="Gallery image 6" class="gallery__img" />
+				</figure>
+			</div>
+		</div>
+		<!-- Akhir Ruangan -->
+
+		<!-- Prestasi -->
+		<div class="container-md mt-5" id="prestasi">
+			<div class="row text-center mb-4">
+				<div class="col">
+					<h2>Prestasi</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<div id="carouselExampleDark" class="carousel carousel-light slide" data-bs-ride="carousel">
+						<div class="carousel-indicators">
+							<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+							<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+							<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+							<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+							<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+						</div>
+						<div class="carousel-inner">
+							<div class="carousel-item active data-bs-interval="10000">
+							<img src="assets/prestasi/Bebras Challange.jpg" class="d-block" alt="Lomba Bebras Challange Penegak" />
+							<div class="carousel-caption text-light rounded-pill justify-content-center">
+								<div class="row h-100 w-100 align-items-center">
+									<div class="col-3 text-center">
+										<h6>All Win</h6>
+										<hr />
+									</div>
+									<div class="col-6">
+										<h5>Bebras Challange Penegak</h5>
+									</div>
+									<div class="col-3">
+										<h6>2020</h6>
+										<hr />
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item" data-bs-interval="2000">
+							<img src="assets/prestasi/IT Software.jpg" class="d-block" alt="IT Software Solution For Bussines" />
+							<div class="carousel-caption text-light rounded-pill justify-content-center">
+								<div class="row h-100 align-items-center w-100">
+									<div class="col-3">
+										<h6>Juara 2</h6>
+										<hr />
+									</div>
+									<div class="col-6">
+										<h5>IT Software Solution For Bussines</h5>
+									</div>
+									<div class="col-3">
+										<h6>2019</h6>
+										<hr />
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="assets/prestasi/juara coding edusiber.jpg" class="d-block" alt="Coding Edusiber Tingkat Provinsi" />
+							<div class="carousel-caption text-light rounded-pill justify-content-center">
+								<div class="row h-100 align-items-center w-100">
+									<div class="col-3 text-center">
+										<h6>Juara 2</h6>
+										<hr />
+									</div>
+									<div class="col-6">
+										<h5>Coding Edusiber Tingkat Provinsi</h5>
+									</div>
+									<div class="col-3">
+										<h6>2019</h6>
+										<hr />
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="assets/prestasi/Kuis Kihajar.jpg" class="d-block" alt="Kuis Kihajar Tingkat Nasional" />
+							<div class="carousel-caption text-light rounded-pill justify-content-center">
+								<div class="row h-100 align-items-center w-100">
+									<div class="col-3 text-center">
+										<h6>Juara 2</h6>
+										<hr />
+									</div>
+									<div class="col-6">
+										<h5>Kuis Kihajar Tingkat Nasional</h5>
+									</div>
+									<div class="col-3">
+										<h6>2019</h6>
+										<hr />
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="assets/prestasi/Parade Cinta Tanah Air.jpg" class="d-block" alt="Parade Cinta Tanah Air DKI Jakarta" />
+							<div class="carousel-caption text-light rounded-pill justify-content-center">
+								<div class="row h-100 align-items-center w-100">
+									<div class="col-3 text-center">
+										<h6>Juara 2</h6>
+										<hr />
+									</div>
+									<div class="col-6">
+										<h5>Parade Cinta Tanah Air DKI Jakarta</h5>
+									</div>
+									<div class="col-3">
+										<h6>2019</h6>
+										<hr />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button class="carousel-control-prev carousel-dark" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next carousel-dark" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</div>
+		</div>
+		+
+		<!-- Akhir Prestasi -->
+
+
+		<!-- Footer -->
+		<footer class="text-start footer ">
+			<!-- Grid container -->
+			<div class="container p-4">
+			  <!--Grid row-->
+			  <div class="row">
+				<!--Grid column-->
+				<div class="col-sm-6 mb-md-0 text-sm-start text-center">
+				  <img src="assets/header/logo-sija.png" alt="logo sija" class="md-block w-50">
+		  
+				  <h5>SIJA SMKN 26 Jakarta</h5>
+				  <p>		
+					Jl. Balai Pustaka Baru 1 Ramangun, <br>
+					Kelurahan Pulo Gadung, Kota Jakarta Timur <br>
+					Jakarta 13220
+				  </p>
+				</div>
+				<!--Grid column-->
+			
+				<!--Grid column-->
+				<div class="col-sm-2 col-4 mb-4 mt-5 mb-md-0">  
+				  <ul class="list-unstyled mb-0">
+					<li>
+					  <a href="#">Beranda</a>
+					</li>
+					<li>
+					  <a href="#tentang">Tentang</a>
+					</li>
+					<li>
+					  <a href="#guru">Guru</a>
+					</li>
+				  </ul>
+				</div>
+				<!--Grid column-->
+		  
+				<!--Grid column-->
+				<div class="col-sm-2 col-4 mb-4 mt-5 mb-md-0">
+		  
+				  <ul class="list-unstyled">
+					<li>
+					  <a href="#!">Jumlah Siswa</a>
+					</li>
+					<li>
+					  <a href="#!">Prestasi</a>
+					</li>
+					<li>
+					  <a href="#!">Lokasi</a>
+					</li>
+				  </ul>
+				</div>
+				<!--Grid column-->
+				
+				<!--Grid column-->
+				<div class="col-sm-2 col-4 mb-4 mt-5 mb-md-0">
+		  
+				  <ul class="list-unstyled">
+					<li>
+					  <a href="#!">Ruangan</a>
+					</li>
+					<li>
+					  <a href="#!">Industri</a>
+					</li>
+					<li>
+					  <a href="#!">Hubungi kami</a>
+					</li>
+				  </ul>
+				</div>				
+				<!--Grid column-->
+			  </div>
+			  <!--Grid row-->
+			</div>
+			<!-- Grid container -->
+		  
+			<!-- Copyright -->
+			<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+			  © 2022 Copyright | Build with <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
+				<path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"/>
+			  </svg> Kelompok 7
+			</div>
+			<!-- Copyright -->
+		 </footer>
+
+		<!-- Akhir Footer -->
+
+		<!-- Script -->
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+		<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+		<script src="script/script.js"></script>
+	</body>
+</html>
