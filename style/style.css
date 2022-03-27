@@ -151,6 +151,10 @@ q {
 /* Akhir Siswa */
 
 /* Awal Ruangan */
+/* Img Size  */
+
+
+/* Img */
 .ruanganImg {
 	height: 1000px !important;
 	overflow: hidden;
@@ -159,13 +163,62 @@ q {
 	display: flex !important;
 	object-fit: cover !important;
 	transition: 0.5s;
-	filter: grayscale(1) brightness(40%);
 	transition: clip-path 0.5s;
-}
-.img-size:hover {
-	transition: 0.5s;
 	filter: none;
 }
+.gambar:hover >img {
+	filter: grayscale(1) brightness(40%) !important;
+	backdrop-filter: blur(20px);
+	transition: 0.5s;
+}
+.text-overlay{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+}
+.text-overlay *{
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+.text-overlay button{
+	margin-top:44px;
+}
+.text-overlay:hover{
+	opacity: 1;
+} 
+.text-overlay > *{
+	transform: translateY(20px);
+	transform: translateX(-55px);
+	transition: all 0.55s;
+}
+.text-overlay:hover > *{
+	transform: translateY(0);
+	transform: translate(-50%, -50%);
+} 
+
+
+.gambar hr {
+	display: block !important;
+	width: 100px !important;
+	height: 30px !important;
+	color: red;
+}
+.gambar .align-text-bottom {
+	padding-top: 20px;
+} 
 .satu {
 	height: 100% !important;
 	width: 100% !important;
@@ -185,26 +238,8 @@ q {
 .gambar {
 	position: relative;
 }
-.gambar p {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	text-align: center;
-	color: white;
-	font-weight: 400;
-	font-size: 2rem;
-}
-
-.gambar hr {
-	display: block !important;
-	width: 100px !important;
-	height: 30px !important;
-	color: red;
-}
-.gambar .align-text-bottom {
-	padding-top: 20px;
+.align-text-bottom{
+	padding-top: 20px !important;
 }
 /* img zoom */
 /* The Modal (background) */
@@ -287,6 +322,7 @@ q {
 }
 
 /* Akhir Ruangan */
+
 
 /* Prestasi */
 #prestasi {
@@ -419,13 +455,15 @@ ul li {
 		padding: 0;
 	}
 	.ruanganImg {
-		height: 800px !important;
+		height: 1200px !important;
 	}
-
-	.img-size {
+	.gambar{
 		padding: 10px;
-		margin: 0;
 		height: 150px !important;
+		margin:0;
+	}
+	.gambars{
+		margin-top: -300px !important;
 	}
 }
 
@@ -441,11 +479,11 @@ ul li {
 		width: 8vw;
 	}
 	.ruanganImg {
-		height: 550px !important;
+		height: 1400px !important;
 	}
-	.img-size {
+	.gambar{
 		padding: 5px;
-		margin: 0;
-		height: 100px !important;
+		margin: 0  ;
+		height: 200px !important;
 	}
 }
