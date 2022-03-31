@@ -20,7 +20,6 @@ function topFunction() {
 }
 // Akhir To Top
 
-// Akhir Slider Untuk Guru
 // Slider untuk Siswa
 function guru() {
 	$(".guru-container").slick({
@@ -42,6 +41,7 @@ $(window).resize(function () {
 	}
 });
 
+// Siswa
 function slickfy() {
 	$(".container-siswa-slider").slick({
 		arrows: false,
@@ -50,7 +50,6 @@ function slickfy() {
 		autoplaySpeed: 2000,
 		slidesToShow: 1,
 		slidesToScroll: true,
-		slide: ".siswa-slider",
 	});
 }
 

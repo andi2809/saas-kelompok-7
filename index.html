@@ -33,6 +33,10 @@
 		<title>Web SIJA</title>
 	</head>
 	<body>
+		<!-- Alert -->
+		<div class="notify"><span id="notifyType" class=""></span></div>
+		<!-- Akhir Alert -->
+
 		<!-- button To Top -->
 		<button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
 		<!-- Akhir Button -->
@@ -56,7 +60,7 @@
 								<a class="nav-link" href="#guru">Guru</a>
 								<a class="nav-link" href="#ruangan">Ruangan</a>
 								<a class="nav-link" href="#prestasi">Prestasi</a>
-								<a class="nav-link" href="#">Industri</a>
+								<a class="nav-link" href="#lokasi">Lokasi</a>
 							</div>
 						</div>
 					</div>
@@ -84,7 +88,7 @@
 						<h2>About</h2>
 					</div>
 				</div>
-				<div class="row justify-content-around">
+				<div class="row d-flex justify-content-around">
 					<div class="col-md-6">
 						<img src="assets/Foto-Tentang.png" alt="Gedung SIJA" />
 					</div>
@@ -161,7 +165,7 @@
 							<div class="dot1 dot"></div>
 							<div class="dot2 dot"></div>
 							<div class="card-body">
-								<p class="card-text">Eva<br /><span>Si Paling PNS</span></p>
+								<p class="card-text">Eva<br /><span>Guru</span></p>
 							</div>
 						</div>
 					</div>
@@ -174,7 +178,7 @@
 		<div class="container text-center">
 			<div class="row">
 				<div class="col">
-					<h2>Jumlah Siswa</h2>
+					<h2 id="jumlah-siswa">Jumlah Siswa</h2>
 				</div>
 			</div>
 		</div>
@@ -223,9 +227,9 @@
 
 				<div class="col-md-4 col-sm-12 gambars">
 					<div class="gambar dua">
-						<img src="assets/Ruangan/Foto-N03.jpg" id="myImg2" alt="Lab 4 Infrastruktur Layanan Jaringan" class="w-100 h-100 rounded img-size" />
+						<img src="assets/Ruangan/Foto-N03.jpg" id="myImg2" alt="Lab 4 Infrastruktur Layanan Komputasi" class="w-100 h-100 rounded img-size" />
 						<div class="text-overlay">
-						<h4>Ruangan N0-22</h4>
+						<h4>Ruangan Lab 4</h4>
 						<button class="btn btn-img btn-outline-dark"id="button2">Lihat Gambar</button>
 						</div>
 						<div id="myModal2" class="modal">
@@ -292,10 +296,12 @@
 							<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
 							<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
 							<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+							<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
+							<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="6" aria-label="Slide 7"></button>
 						</div>
 						<div class="carousel-inner">
 							<div class="carousel-item active data-bs-interval="10000">
-							<img src="assets/prestasi/Bebras Challange.jpg" class="d-block" alt="Lomba Bebras Challange Penegak" />
+							<img src="assets/prestasi/Bebras.jpg" class="d-block" alt="Lomba Bebras Challange Penegak" />
 							<div class="carousel-caption text-light rounded-pill justify-content-center">
 								<div class="row h-100 w-100 align-items-center">
 									<div class="col-3 text-center">
@@ -312,16 +318,52 @@
 								</div>
 							</div>
 						</div>
-						<div class="carousel-item" data-bs-interval="2000">
-							<img src="assets/prestasi/IT Software.jpg" class="d-block" alt="IT Software Solution For Bussines" />
+						<div class="carousel-item">
+							<img src="assets/prestasi/datascience.jpg" class="d-block" alt="KKSI Data Science" />
 							<div class="carousel-caption text-light rounded-pill justify-content-center">
 								<div class="row h-100 align-items-center w-100">
+									<div class="col-3 text-center">
+										<h6>Juara 1</h6>
+										<hr />
+									</div>
+									<div class="col-6">
+										<h5>KKSI Data Science</h5>
+									</div>
 									<div class="col-3">
+										<h6>2021</h6>
+										<hr />
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="assets/prestasi/smartschool.jpg" class="d-block" alt="KKSI Smartschool" />
+							<div class="carousel-caption text-light rounded-pill justify-content-center">
+								<div class="row h-100 align-items-center w-100">
+									<div class="col-3 text-center">
+										<h6>Juara 3</h6>
+										<hr />
+									</div>
+									<div class="col-6">
+										<h5>KKSI Smartschool</h5>
+									</div>
+									<div class="col-3">
+										<h6>2021</h6>
+										<hr />
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="assets/prestasi/nihon.jpg" class="d-block" alt="KKSI Nihon Noryoku" />
+							<div class="carousel-caption text-light rounded-pill justify-content-center">
+								<div class="row h-100 align-items-center w-100">
+									<div class="col-3 text-center">
 										<h6>Juara 2</h6>
 										<hr />
 									</div>
 									<div class="col-6">
-										<h5>IT Software Solution For Bussines</h5>
+										<h5>KKSI Nihon Noryoku</h5>
 									</div>
 									<div class="col-3">
 										<h6>2019</h6>
@@ -330,6 +372,7 @@
 								</div>
 							</div>
 						</div>
+						
 						<div class="carousel-item">
 							<img src="assets/prestasi/juara coding edusiber.jpg" class="d-block" alt="Coding Edusiber Tingkat Provinsi" />
 							<div class="carousel-caption text-light rounded-pill justify-content-center">
@@ -349,7 +392,7 @@
 							</div>
 						</div>
 						<div class="carousel-item">
-							<img src="assets/prestasi/Kuis Kihajar.jpg" class="d-block" alt="Kuis Kihajar Tingkat Nasional" />
+							<img src="assets/prestasi/kuis kihajar.jpg" class="d-block" alt="Kuis Kihajar Tingkat Nasional" />
 							<div class="carousel-caption text-light rounded-pill justify-content-center">
 								<div class="row h-100 align-items-center w-100">
 									<div class="col-3 text-center">
@@ -399,13 +442,13 @@
 		<!-- Akhir Prestasi -->
 
 		<!-- Lokasi -->
-		<!-- <div class="container-md text-center mt-5 mb-5">
-			<div class="col">
+		<div class="container-md text-center mt-5 mb-5">
+			<div class="col pb-3">
 				<div class="row">
 					<h2 id="lokasi">Lokasi</h2>
 				</div>
 			</div>
-			<div class="ratio ratio-16x9">
+			<div class="ratio" style="--bs-aspect-ratio: 45%">
 				<iframe
 					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.522522193328!2d106.88512551449298!3d-6.194573462412131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f49532b5b715%3A0xa4012b68ec698d4e!2sSMK%20Negeri%2026%20Jakarta!5e0!3m2!1sid!2sid!4v1647069449405!5m2!1sid!2sid"
 					style="border: 0"
@@ -414,7 +457,7 @@
 					allowfullscreen=""
 				></iframe>
 			</div>
-		</div> -->
+		</div>
 		<!-- Akhir Lokasi -->
 
 		<!-- Footer -->
@@ -437,18 +480,15 @@
 							<!-- Section: Social media -->
 							<section class="mb-4">
 								<!-- Facebook -->
-								<a class="btn btn-primary rounded-circle m-1" style="background-color: #3b5998" href="#!"><i class="fab fa-facebook-f"></i></a>
+								<a class="btn btn-primary rounded-circle m-1"onclick="alert('Tindakan Tidak ditemukan')" style="background-color: #3b5998" href="#!"><i class="fab fa-facebook-f"></i></a>
 								<!-- Twitter -->
-								<a class="btn btn-primary rounded-circle m-1" style="background-color: #55acee" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+								<a class="btn btn-primary rounded-circle m-1"onclick="alert('Tindakan Tidak ditemukan')" style="background-color: #55acee" href="#!" role="button"><i class="fab fa-twitter"></i></a>
 								<!-- Google -->
-								<a class="btn btn-primary rounded-circle m-1" style="background-color: #dd4b39" href="#!" role="button"><i class="fab fa-google"></i></a>
+								<a class="btn btn-primary rounded-circle m-1"onclick="alert('Tindakan Tidak ditemukan')" style="background-color: #dd4b39" href="#!" role="button"><i class="fab fa-google"></i></a>
 								<!-- Instagram -->
-								<a class="btn btn-primary rounded-circle m-1" style="background-color: #ac2bac" href="#!" role="button"><i class="fab fa-instagram"></i></a>
-
-								<!-- Linkedin -->
-								<a class="btn btn-primary rounded-circle m-1" style="background-color: #0082ca" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+								<a class="btn btn-primary rounded-circle m-1"onclick="alert('Tindakan Tidak ditemukan')" style="background-color: #ac2bac" href="#!" role="button"><i class="fab fa-instagram"></i></a>
 								<!-- Github -->
-								<a class="btn btn-primary rounded-circle m-1" style="background-color: #333333" href="#!" role="button"><i class="fab fa-github"></i></a>
+								<a class="btn btn-primary rounded-circle m-1" style="background-color: #333333" href="https://github.com/andi2809/saas-kelompok-7" target="_blank" role="button"><i class="fab fa-github"></i></a>
 							</section>
 							<!-- Section: Social media -->
 						</div>
@@ -477,7 +517,7 @@
 					<div class="col-sm-2 col-4 mb-4 mt-5 mb-md-0">
 						<ul class="list-unstyled">
 							<li>
-								<a href="#">Jumlah Siswa</a>
+								<a href="#jumlah-siswa">Jumlah Siswa</a>
 							</li>
 							<li>
 								<a href="#prestasi">Prestasi</a>
@@ -496,9 +536,6 @@
 								<a href="#ruangan">Ruangan</a>
 							</li>
 							<li>
-								<a href="#!">Industri</a>
-							</li>
-							<li>
 								<a href="#!">Hubungi kami</a>
 							</li>
 						</ul>
@@ -510,7 +547,7 @@
 			<!-- Grid container -->
 
 			<!-- Copyright -->
-			<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+			<div class="text-center p-3 footer-text" style="background-color: rgba(0, 0, 0, 0.2)">
 				© 2022 Copyright | Build with
 				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
 					<path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z" />
