@@ -21,7 +21,11 @@
 		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 		<!-- Add the slick-theme.css if you want default styling -->
 		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-
+		
+    <!--AOS Animation-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--AOS Animation End-->
+    
 		<!-- Favicon -->
 		<link rel="icon" type="image/x-icon" href="/assets/Favicon.png">
 
@@ -84,15 +88,15 @@
 		<section id="tentang">
 			<div class="container pt-3">
 				<div class="row text-center mb-4">
-					<div class="col">
+					<div class="col"data-aos="fade-down"data-aos-duration="1000">
 						<h2>About</h2>
 					</div>
 				</div>
 				<div class="row d-flex justify-content-around">
-					<div class="col-md-6">
+					<div class="col-md-6"data-aos="fade-right"data-aos-duration="1500">
 						<img src="assets/Foto-Tentang.png" alt="Gedung SIJA" />
 					</div>
-					<div class="col-md-6 align-self-center">
+					<div class="col-md-6 align-self-center"data-aos="fade-left"data-aos-duration="1500">
 						<p>
 							SIJA atau Sistem Informatika, Jaringan, dan Aplikasi adalah salah satu jurusan yang terbilang baru di SMK sejak tahun 2017. SMK dengan sistem 4 tahun ini berbeda dengan yang lain, di mana program PKL atau magang
 							ini berada pada tingkat ke-4 atau di kelas 13 dengan durasi PKL selama 10 sampai 12 bulan.
@@ -100,10 +104,10 @@
 					</div>
 				</div>
 				<div class="row mt-5 justify-content-around flex-row-reverse">
-					<div class="col-md-6">
+					<div class="col-md-6"data-aos="fade-left"data-aos-duration="3000">
 						<img src="assets/Foto-SMK.png" alt="Foto SMKN 26" />
 					</div>
-					<div class="col-md-6 align-self-center">
+					<div class="col-md-6 align-self-center"data-aos="fade-right"data-aos-duration="3000">
 						<p>SMK Negeri 26 Jakarta merupakan lembaga pendidikan kejuruan yang bertugas meningkatkan Sumber Daya Manusia (SDM) yang sesuai dengan kebutuhan Industri dan Masyarakat.</p>
 					</div>
 				</div>
@@ -114,13 +118,13 @@
 		<section id="guru">
 			<div class="container text-center pt-3 mt-5">
 				<div class="row pb-3">
-					<div class="col">
+					<div class="col" data-aos="fade-up"data-aos-duration="1000">
 						<h2>Guru</h2>
 					</div>
 				</div>
 				<div class="row justify-content-around guru-container">
 					<div class="col-md-4 rounded-3 foto-guru">
-						<div class="card border-0 guru-slider" style="width: 18rem">
+						<div class="card border-0 guru-slider" style="width: 18rem"data-aos="fade-up"data-aos-duration="1000">
 							<img src="assets/guru/kuri.png" class="card-img-top" alt="Foto Bu Kuri" />
 							<div class="dot1 dot"></div>
 							<div class="dot2 dot"></div>
@@ -129,7 +133,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4 rounded-3 foto-guru">
+					<div class="col-md-4 rounded-3 foto-guru"data-aos="fade-up"data-aos-duration="1000">
 						<div class="card border-0 guru-slider" style="width: 18rem">
 							<img src="assets/guru/Samsul.png" class="card-img-top" alt="Foto Pa Samsul" />
 							<div class="dot1 dot"></div>
@@ -140,7 +144,7 @@
 						</div>
 					</div>
 					<div class="col-md-4 rounded-3 foto-guru">
-						<div class="card border-0 guru-slider" style="width: 18rem">
+						<div class="card border-0 guru-slider" style="width: 18rem"data-aos="fade-up"data-aos-duration="1000">
 							<img src="assets/guru/Danial.png" class="card-img-top" alt="Foto Pa Danial" />
 							<div class="dot1 dot"></div>
 							<div class="dot2 dot"></div>
@@ -150,7 +154,7 @@
 						</div>
 					</div>
 					<div class="col-md-4 rounded-3 foto-guru">
-						<div class="card border-0 guru-slider" style="width: 18rem">
+						<div class="card border-0 guru-slider" style="width: 18rem"data-aos="fade-up"data-aos-duration="1000">
 							<img src="assets/guru/Sevia.png" class="card-img-top" alt="Foto Bu Sevia" />
 							<div class="dot1 dot"></div>
 							<div class="dot2 dot"></div>
@@ -160,7 +164,7 @@
 						</div>
 					</div>
 					<div class="col-md-4 rounded-3 foto-guru">
-						<div class="card border-0 guru-slider" style="width: 18rem">
+						<div class="card border-0 guru-slider" style="width: 18rem"data-aos="fade-up"data-aos-duration="1000">
 							<img src="assets/guru/Eva.png" class="card-img-top" alt="Foto Bu Eva" />
 							<div class="dot1 dot"></div>
 							<div class="dot2 dot"></div>
@@ -177,25 +181,25 @@
 		<!-- Jumlah Siswa -->
 		<div class="container text-center">
 			<div class="row">
-				<div class="col">
+				<div class="col" data-aos="zoom-out-up"data-aos-duration="1000">
 					<h2 id="jumlah-siswa">Jumlah Siswa</h2>
 				</div>
 			</div>
 		</div>
-		<div class="bg-image text-center shadow-1-strong rounded text-white jumlah-siswa" style="background-image: url('assets/background-siswa.png'); background-repeat: no-repeat; background-color: #fafafa; background-size: cover">
+		<div class="bg-image text-center shadow-1-strong rounded text-white jumlah-siswa" style="background-image: url('assets/background-siswa.png'); background-repeat: no-repeat; background-color: #fafafa; background-size: cover"data-aos="fade-out"data-aos-duration="1000">
 			<section id="siswa">
 				<div class="container text-center max-vw-100 pb-3 pt-5">
 					<div class="row justify-content-between container-siswa-slider align-items-center">
-						<div class="col-md-3 siswa-slider">
+						<div class="col-md-3 siswa-slider"data-aos="zoom-out"data-aos-duration="1000">
 							<p class="siswa">70 <br />X</p>
 						</div>
-						<div class="col-md-3 siswa-slider">
+						<div class="col-md-3 siswa-slider"data-aos="zoom-out"data-aos-duration="1000">
 							<p class="siswa">69 <br />XI</p>
 						</div>
-						<div class="col-md-3 siswa-slider">
+						<div class="col-md-3 siswa-slider" data-aos="zoom-out"data-aos-duration="1000">
 							<p class="siswa">72 <br />XII</p>
 						</div>
-						<div class="col-md-3 siswa-slider">
+						<div class="col-md-3 siswa-slider"data-aos="zoom-out"data-aos-duration="1000">
 							<p class="siswa">70 <br />XIII</p>
 						</div>
 					</div>
@@ -207,13 +211,13 @@
 		<!-- Awal Ruangan -->
 		<div class="container-fluid text-center p-md-5 p-3 g-0" id="ruangan">
 			<div class="row">
-				<div class="col pb-2">
+				<div class="col pb-2"data-aos="zoom-in-up"data-aos-duration="1000">
 					<h2>Ruangan</h2>
 				</div>
 			</div>
 			<!-- Gallery -->
 			<div class="row ruanganImg g-md-4 g-1">
-				<div class="col-md-4 col-sm-12 gambar">
+				<div class="col-md-4 col-sm-12 gambar"data-aos="zoom-in-up"data-aos-duration="1000">
 					<img src="assets/Ruangan/GedungSija.jpg" alt="Gedung Sija" id="myImg" class="w-100 rounded img-size satu" />
 					<div class="text-overlay">
 						<h4>Gedung Sija</h4>
@@ -226,7 +230,7 @@
 				</div>
 
 				<div class="col-md-4 col-sm-12 gambars">
-					<div class="gambar dua">
+					<div class="gambar dua"data-aos="zoom-in-up"data-aos-duration="1000">
 						<img src="assets/Ruangan/Foto-N03.jpg" id="myImg2" alt="Lab 4 Infrastruktur Layanan Komputasi" class="w-100 h-100 rounded img-size" />
 						<div class="text-overlay">
 						<h4>Ruangan Lab 4</h4>
@@ -237,7 +241,7 @@
 							<div class="caption" id="caption2"></div>
 						</div>
 					</div>
-					<div class="gambar tiga">
+					<div class="gambar tiga"data-aos="zoom-in-up"data-aos-duration="1000">
 						<img src="assets/Ruangan/n03-inside.jpg" id="myImg3" alt="Ruangan N0-2" class="w-100 h-100 rounded img-size align-text-bottom" />
 						<div class="text-overlay">
 						<h4>Ruangan N0-3</h4>
@@ -251,7 +255,7 @@
 				</div>
 
 				<div class="col-md-4 col-sm-12 gambars">
-					<div class="gambar empat">
+					<div class="gambar empat"data-aos="zoom-in-up"data-aos-duration="1000">
 						<img src="assets/Ruangan/n0-2.jpg" id="myImg4" alt="Ruangan N0-3" class="w-100 h-100 rounded img-size" />
 						<div class="text-overlay">
 						<h4>Ruangan N0-2</h4>
@@ -262,7 +266,7 @@
 							<div class="caption" id="caption4"></div>
 						</div>
 					</div>
-					<div class="gambar lima">
+					<div class="gambar lima"data-aos="zoom-in-up"data-aos-duration="1000">
 						<img src="assets/Ruangan/n02-inside.jpg" id="myImg5" alt="Ruangan N0-2" class="w-100 h-100 rounded img-size align-text-bottom" />
 						<div class="text-overlay">
 						<h4>Ruangan N0-2</h4>
@@ -568,5 +572,11 @@
 		<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 		<!-- eskternal Script -->
 		<script src="script/script.js"></script>
+		
+		<!--AOS JAVASCRIPT-->
+		  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 	</body>
 </html>
